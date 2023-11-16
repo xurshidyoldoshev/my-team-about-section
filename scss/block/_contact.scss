@@ -1,0 +1,79 @@
+.contact {
+
+    background-color: #F67E7E;
+    background-image: url(../../img/contact_bc.svg);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+
+    &__container {
+        padding-top: 76px;
+        padding-bottom: 76px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__title {
+        color: #012F34;
+        font-family: Livvic;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 48px;
+        /* 100% */
+    }
+
+    &__btn {
+        color: #012F34;
+        border-radius: 24px;
+        border: 2px solid #012F34;
+        padding: 9px 33px 11px 32px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1410px) {
+    .contact__container {
+        padding-top: 84px;
+        padding-bottom: 84px;
+    }
+}
+
+@media screen and (max-width: 1390px) {
+    .contact__title {
+        font-size: 32px;
+        line-height: 32px;
+
+    }
+
+    .contact__container {
+        max-width: 650px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .contact__btn {
+        width: 153px;
+        flex-shrink: 0;
+    }
+}
+@media screen and (max-width: 880px) {
+    .contact__container {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        margin-right: auto;
+        margin-left: auto;
+        padding-bottom: 103px;
+        padding-top: 83px;
+    }
+    .contact__title {
+        max-width: 327px;
+        font-size: 32px;
+        line-height: 32px;
+        text-align: center;
+    }
+}
